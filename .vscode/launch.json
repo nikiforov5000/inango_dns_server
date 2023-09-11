@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // Default, works
+    {
+      "type": "lldb",
+      "request": "launch", 
+      "name": "Launch",
+      "program": "/home/boris/Documents/c_inango_test_job/build/Debug/outDebug",
+      "args": ["1025"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "gdb",
+      "request": "launch",
+      "name": "GDB",
+      "program": "/home/boris/Documents/c_inango_test_job/build/Debug/outDebug",
+      "stopOnEntry": true
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/home/boris/Documents/c_inango_test_job",
+      "program": "/home/boris/Documents/c_inango_test_job/build/Debug/outDebug",
+      "MIMode": "lldb",
+      "miDebuggerPath": "/usr/bin/lldb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
